@@ -28,7 +28,24 @@ Um Ressourcen zu sparen, kann man auch unterschiedliche Stylesheets für untersc
 ```
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 ```
+Ausser im Internet Explorer gibt es zusätzlich die Möglichkeit, Media Queries zu verschachteln:
+```
+@media only screen and (max-width: 750px) {
+  p {
+    font-weight: bold;
+  }
+  @media (min-height: 500px) {
+    p {
+      background: yellow;
+    }
+  }
+}
+```
+
 
 ## Quellen
 - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+- https://caniuse.com/?search=media%20queries
+- https://www.bram.us/2021/01/11/nested-media-queries/
+- https://www.w3.org/TR/mediaqueries-5/
