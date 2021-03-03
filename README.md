@@ -14,7 +14,7 @@ Seit CSS3 können ganze Stylesheets oder einzelne Regeln abhängig vom Gerätety
 
 ### Beispiele
 Eine Media Query wird üblicherweise mit dem `@media`-Attribut und den dazugehörenden Regeln definiert:
-```
+```CSS
 /* Abhängig von Bildschirmgrösse */
 @media only screen and (min-width: 768px) { ... }
 
@@ -25,11 +25,11 @@ Eine Media Query wird üblicherweise mit dem `@media`-Attribut und den dazugehö
 @media print { ... }
 ```
 Um Ressourcen zu sparen, kann man auch unterschiedliche Stylesheets für unterschiedliche Ausgabegeräte laden und die `media`-Regeln direkt in den `<link>` tag schreiben:
-```
+```HTML
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 ```
 Ausser im Internet Explorer gibt es zusätzlich die Möglichkeit, Media Queries zu verschachteln:
-```
+```CSS
 @media only screen and (max-width: 750px) {
   p {
     font-weight: bold;
