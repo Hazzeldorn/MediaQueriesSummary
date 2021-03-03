@@ -1,4 +1,4 @@
-# MediaQueries webcl Talk
+# MediaQueries Summary
 Präsentation zu CSS Media Queries im Modul webcl an der FHNW
 
 ## Ideen für die Präsentation
