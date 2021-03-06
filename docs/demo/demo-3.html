@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
+        <title>Demo 3 - Device orientation & nesting</title>
+
+        <!-- <link rel="stylesheet" href="assets/reset.css"> -->
+        <link rel="stylesheet" href="assets/prism.css">
+        <script src="assets/prism.js"></script>
+
+        <style>
+
+            body {
+                font-family: 'Arial', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                margin: 0;
+                padding: 0 50px;
+            }
+
+            h1 {
+                margin-top: 2em;
+                text-align: center;
+            }
+
+            .container {
+                position: relative;
+                margin: 50px auto;
+                max-width: 1000px;
+                background: #eee;
+                border: 1px solid silver;
+                box-shadow: 1px 0px 5px -3px rgba(0,0,0,0.3);
+            }
+
+            .box {
+                padding: 1em;
+                background: #d5d26d;
+            }
+
+            @media screen and (orientation: landscape) {
+
+                @media (min-width: 430px) {
+                    .box {
+                        background: #e3805b;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .box {
+                        background: #c45a86;
+                    }
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Demo 3 - Device orientation & nesting</h1>
+
+        <div class="container">
+
+            <div class="box">
+                <br><br><br>
+            </div>
+
+        </div>
+
+
+<!-- ugly code in the editor but beautiful in the browser :) -->
+<div class="container">
+<pre><code class="language-css">
+
+
+</code></pre>
+</div>
+
+    </body>
+</html>
