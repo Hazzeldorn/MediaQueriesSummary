@@ -1,5 +1,9 @@
 /* very basic styles for all demos */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     font-weight: 400;
@@ -19,6 +23,7 @@ header {
 .container {
     position: relative;
     margin: 50px auto;
+    width: 100%;
     max-width: 1000px;
     background: #eee;
     border: 1px solid silver;
