@@ -1,18 +1,17 @@
-# MediaQueries Summary
+# Media Queries Summary
 
-## Was sind Media Queries?
 Seit CSS3 können ganze Stylesheets oder einzelne Regeln abhängig vom Gerätetyp oder der Bildschirmgrösse aktiviert bzw. deaktiviert werden. Dies wird mit Media Queries umgesetzt, was inzwischen das A & O von responsivem Webdesign darstellt.
 
 ### Beispiele
 Eine Media Query wird üblicherweise mit dem `@media`-Attribut und den dazugehörenden Regeln definiert:
 ```CSS
-/* Abhängig von Bildschirmgrösse */
+/* Abhängig von der Bildschirmgrösse */
 @media screen and (min-width: 768px) { ... }
 
-/* Abhängig von Bildformat */
+/* Abhängig vom Bildformat */
 @media screen and (orientation: landscape) { ... }
 
-/* Abhängig von Ausgabesoftware */
+/* Abhängig von der Ausgabesoftware */
 @media print { ... }
 ```
 Um Ressourcen zu sparen, kann man auch unterschiedliche Stylesheets für unterschiedliche Ausgabegeräte laden und die `media`-Regeln direkt in den `<link>` tag schreiben:
@@ -34,12 +33,14 @@ Ausser im Internet Explorer gibt es zusätzlich die Möglichkeit, Media Queries 
 ```
 
 ### Demos
-- [Mobile first breakpoints](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-1.html)
-- [Print](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-2.html)
-- [Device orientation & nesting](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-3.html)
-- [Multiple conditions (OR)](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-4.html)
-- [NOT Keywoard & Version 4 Features](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-5.html)
+- [Demo 1 &ndash; Mobile first breakpoints](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-1.html)
+- [Demo 2 &ndash; Print](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-2.html)
+- [Demo 3 &ndash; Device orientation & query nesting](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-3.html)
+- [Demo 4 &ndash; Multiple conditions (OR)](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-4.html)
+- [Demo 5 &ndash; NOT Keyword & Version 4 Features](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-5.html)
 
+
+---
 
 ## Quellen
 - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
