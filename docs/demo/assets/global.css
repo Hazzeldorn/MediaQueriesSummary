@@ -1,0 +1,30 @@
+/* very basic styles for all demos */
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 50px;
+}
+
+header {
+    margin-top: 3rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    margin: 50px auto;
+    max-width: 1000px;
+    background: #eee;
+    border: 1px solid silver;
+    box-shadow: 1px 0px 5px -3px rgba(0,0,0,0.3);
+}
+
+.box {
+    padding: 1em;
+}

@@ -1,57 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
-        <title>Demo 1 - Print</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
+    <title>Demo 2 - Print</title>
 
-        <!-- <link rel="stylesheet" href="assets/reset.css"> -->
-        <link rel="stylesheet" href="assets/prism.css">
-        <script src="assets/prism.js"></script>
+    <link rel="stylesheet" href="assets/global.css">
+    <link rel="stylesheet" href="assets/prism.css">
+    <script src="assets/prism.js"></script>
 
-        <style>
+    <style>
 
-            body {
-                font-family: 'Arial', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                margin: 0;
-                padding: 0 50px;
-            }
+    img {
+        display: none;
+    }
 
-            h1 {
-                margin-top: 2em;
-                text-align: center;
-            }
+    @media print {
+        img {
+            display: block;
+        }
+    }
 
-            .container {
-                position: relative;
-                margin: 50px auto;
-                max-width: 1000px;
-                background: #eee;
-                border: 1px solid silver;
-                box-shadow: 1px 0px 5px -3px rgba(0,0,0,0.3);
-            }
+    </style>
+</head>
+<body>
 
-            .box {
-                padding: 1em;
-            }
-
-            img {
-                display: none;
-            }
-
-            @media print {
-                img {
-                    display: block;
-                }
-            }
-
-        </style>
-    </head>
-    <body>
-
+    <header class="centered">
         <h1>Demo 2 - Print</h1>
+        <p>TODO: add description here</p>
+    </header>
+
+    <main>
 
         <div class="container">
 
@@ -65,11 +44,19 @@
 
 <!-- ugly code in the editor but beautiful in the browser :) -->
 <div class="container">
-<pre><code class="language-css">
+<pre><code class="language-css">img {
+    display: none;
+}
 
-
+@media print {
+    img {
+        display: block;
+    }
+}
 </code></pre>
 </div>
 
-    </body>
+</main>
+
+</body>
 </html>
