@@ -1,13 +1,4 @@
 # MediaQueries Summary
-Präsentation zu CSS Media Queries im Modul webcl an der FHNW
-
-## Ideen für die Präsentation
-- Kurze Präsentation zu Media-Queries
-- Kurzer Überblick über verschiedene Einheiten (px, em, rem, %, vw, vh etc.) und deren Effek
-- Best-Practices / Don'ts  (evtl. Inspiration von Frameworks wie Bootstrap?)
-- Einfache Github-Pages Webseite mit Beispielen zum selber Ausprobieren freigeben (an Stelle eines Live-Demos um Zeit zu sparen)
-
----
 
 ## Was sind Media Queries?
 Seit CSS3 können ganze Stylesheets oder einzelne Regeln abhängig vom Gerätetyp oder der Bildschirmgrösse aktiviert bzw. deaktiviert werden. Dies wird mit Media Queries umgesetzt, was inzwischen das A & O von responsivem Webdesign darstellt.
@@ -16,10 +7,10 @@ Seit CSS3 können ganze Stylesheets oder einzelne Regeln abhängig vom Gerätety
 Eine Media Query wird üblicherweise mit dem `@media`-Attribut und den dazugehörenden Regeln definiert:
 ```CSS
 /* Abhängig von Bildschirmgrösse */
-@media only screen and (min-width: 768px) { ... }
+@media screen and (min-width: 768px) { ... }
 
 /* Abhängig von Bildformat */
-@media only screen and (orientation: landscape) { ... }
+@media screen and (orientation: landscape) { ... }
 
 /* Abhängig von Ausgabesoftware */
 @media print { ... }
@@ -41,6 +32,13 @@ Ausser im Internet Explorer gibt es zusätzlich die Möglichkeit, Media Queries 
   }
 }
 ```
+
+### Demos
+- [Mobile first breakpoints](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-1.html)
+- [Print](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-2.html)
+- [Device orientation & nesting](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-3.html)
+- [Multiple conditions (OR)](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-4.html)
+- [NOT Keywoard & Version 4 Features](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-5.html)
 
 
 ## Quellen
