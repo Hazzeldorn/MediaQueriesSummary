@@ -10,68 +10,69 @@
     <script src="assets/prism.js"></script>
 
     <style>
-    .box {
-        background: #d5d26d;
-    }
-
-    @media screen and (orientation: landscape) {
-
-        @media (min-width: 430px) {
-            .box {
-                background: #e3805b;
-            }
+        .box {
+            background: red;
         }
 
-        @media (min-width: 768px) {
-            .box {
-                background: #c45a86;
-            }
-        }
+        @media screen and (orientation: landscape) {
 
-    }
+            @media (min-width: 430px) {
+                .box {
+                    background: green;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .box {
+                    background: blue;
+                }
+            }
+
+        }
     </style>
 </head>
 <body>
 
-    <header class="centered">
-        <h1>Demo 3 - Device orientation & nesting</h1>
-        <p>TODO: add description here</p>
-    </header>
+<header class="centered">
+    <h1>Demo 3 - Device orientation & nesting</h1>
+    <p>The Orientation feature describes the page format of an output medium. There are landscap and portrait. In
+        addition, the media queries are nested.</p>
+</header>
 
-    <main>
+<main>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="box">
-                <br><br><br>
-            </div>
-
+        <div class="box">
+            <br><br><br>
         </div>
 
+    </div>
 
-<!-- ugly code in the editor but beautiful in the browser :) -->
-<div class="container">
+
+    <!-- ugly code in the editor but beautiful in the browser :) -->
+    <div class="container">
 <pre><code class="language-css">.box {
-    background: #d5d26d;
+    background: red;
 }
 
 @media screen and (orientation: landscape) {
 
     @media (min-width: 430px) {
         .box {
-            background: #e3805b;
+            background: green;
         }
     }
 
     @media (min-width: 768px) {
         .box {
-            background: #c45a86;
+            background: blue;
         }
     }
 
 }
 </code></pre>
-</div>
+    </div>
 
 </main>
 
