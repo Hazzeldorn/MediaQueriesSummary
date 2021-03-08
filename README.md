@@ -1,9 +1,9 @@
 # Media Queries Summary
 
-Seit CSS3 können ganze Stylesheets oder einzelne Regeln abhängig vom Gerätetyp oder der Bildschirmgrösse aktiviert bzw. deaktiviert werden. Dies wird mit Media Queries umgesetzt, was inzwischen das A & O von responsivem Webdesign darstellt.
+Seit CSS3 können ganze Stylesheets oder einzelne Regeln abhängig z.B. vom Gerätetyp oder der Bildschirmgrösse aktiviert bzw. deaktiviert werden. Dies wird mit Media Queries umgesetzt, welche inzwischen das A & O von responsivem Webdesign darstellen.
 
 ### Beispiele
-Eine Media Query wird üblicherweise mit dem `@media`-Attribut und den dazugehörenden Regeln definiert:
+Eine Media Query wird mit dem `@media`-Attribut und den dazugehörenden Regeln definiert:
 ```CSS
 /* Abhängig von der Bildschirmgrösse */
 @media screen and (min-width: 768px) { ... }
@@ -14,7 +14,7 @@ Eine Media Query wird üblicherweise mit dem `@media`-Attribut und den dazugehö
 /* Abhängig von der Ausgabesoftware */
 @media print { ... }
 ```
-Um Ressourcen zu sparen, kann man auch unterschiedliche Stylesheets für unterschiedliche Ausgabegeräte laden und die `media`-Regeln direkt in den `<link>` tag schreiben:
+Um Ressourcen zu sparen, können die `media`-Regeln direkt in den `<link>` tag geschrieben werden. Dadurch werden für unterschiedliche Ausgabegeräte eigene Stylesheets geladen.
 ```HTML
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 ```
@@ -42,9 +42,11 @@ Ausser im Internet Explorer gibt es zusätzlich die Möglichkeit, Media Queries 
 
 ---
 
-## Quellen
+
+### Quellen
 - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 - https://caniuse.com/?search=media%20queries
 - https://www.bram.us/2021/01/11/nested-media-queries/
 - https://www.w3.org/TR/mediaqueries-5/
+- https://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
