@@ -13,42 +13,98 @@
 
     <style>
 
-    .container#demo6 {
-        /* override globals */
-        background: none;
-        border: none;
-        box-shadow: none;
+    html {
+        font-size: 1em; /* use browser settings */
+    }
+
+    h1, h2 {
+        color: #fff;
+        margin-top: 0.35em;
+        margin-bottom: 0.5em;
+        line-height: 1.4em;
+    }
+
+    p, a {
+        color: #fff;
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
+        line-height: 1.4em;
+    }
+
+    .container {
+        margin: 3rem auto;
     }
 
     .jumbotron .col-inner {
-        background: #ccc;
+        background: #2c3e50;
     }
 
     .col {
-        border: 1px solid red;
+        position: relative;
+        align-self: stretch;
     }
 
     .col-inner {
-        background: #eee;
+        background: #4b77be;
         margin: 1rem;
-        padding: 1rem;
+        padding: 1.5rem;
+        border-radius: 5px;
+        border: 1px solid #333;
+        height: calc(100% - 2rem);
+    }
+
+    .button {
+        padding: 0.5em 0.75em;
+        margin-top: 0.5em;
+        font-size: 1em;
+        font-weight: bold;
+        background: #e4f1fe;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        box-shadow: 2px 0px 5px -2px rgba(0,0,0,0.4);
+    }
+
+    .huge-font {
+        display: none;
     }
 
     /* sm breakpoint */
-    @media only screen and (min-width: 38em) {
+    @media only screen and (min-width: 42em) {
 
+        .col-inner {
+            margin: 1rem 0.5rem;
+        }
 
     }
 
     /* md breakpoint */
     @media only screen and (min-width: 58em) {
 
+        .huge-font {
+            display: block;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            color: #eee;
+            font-size: 25vh;
+            font-weight: bold;
+            transform: rotate(-90deg) translate(1em , -1em);
+        }
 
     }
 
     /* lg breakpoint */
     @media only screen and (min-width: 75em) {
 
+        /* tweakpoint */
+        @media only screen and (min-width: 95em) {
+            .intro {
+                column-count: 2;
+                column-gap: 2em;
+            }
+        }
 
     }
 
@@ -58,43 +114,45 @@
 
     <main>
 
-        <div id="demo6" class="container">
+        <span class="huge-font">FHNW</span>
+
+        <div class="container">
 
             <div class="row jumbotron">
                 <div class="col col-xs-12">
                     <div class="col-inner">
                         <h1>Demo 6 - Responsive website example</h1>
-                        <p>
-                            <strong>Current media:</strong> <span id="breakpoint-info"></span>
-                        </p>
-                        <p>
-                            This website skeleton uses <a href="http://flexboxgrid.com/" target="_blank" rel="noopener">Flexbox Grid</a>
-                            as a grid system which simplifies the arrangement of the elements in most cases.
+                        <p class="intro">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col col-sm-6 col-md-4">
+                <div class="col col-xs-12 col-sm-6 col-md-4">
                     <div class="col-inner">
-                        <h2>Column 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <h2>Flexbox Grid</h2>
+                        <p>
+                            This website skeleton uses <a href="http://flexboxgrid.com/" target="_blank" rel="noopener">Flexbox Grid</a>
+                            as a grid system which simplifies the arrangement of the elements in most cases.
+                        </p>
                     </div>
                 </div>
-                <div class="col col-sm-6 col-md-4">
+                <div class="col col-xs-12 col-sm-6 col-md-4">
                     <div class="col-inner">
-                        <h2>Column 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <h2>Media detection</h2>
+                        <p>Javascript is able to determine if a CSS media query currently matches.</p>
+                        <p>
+                            Current media: <strong><span id="breakpoint-info"></span></strong>
+                        </p>
                     </div>
                 </div>
                 <div class="col col-xs-12 col-md-4">
                     <div class="col-inner">
-                        <h2>Column 3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <h2>Want more?</h2>
+                        <p>This is a call to action button which uses <em>em</em> for the padding:</p>
+                        <button class="button">Show me more</button>
                     </div>
                 </div>
             </div>
