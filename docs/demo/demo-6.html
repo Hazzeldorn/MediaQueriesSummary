@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
+    <title>Demo 6 - Responsive website example</title>
+
+    <link rel="stylesheet" href="assets/flexboxgrid.css">
+    <link rel="stylesheet" href="assets/global.css">
+    <link rel="stylesheet" href="assets/prism.css">
+
+    <script src="assets/prism.js" defer></script>
+
+    <style>
+
+    .container#demo6 {
+        /* override globals */
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .jumbotron .col-inner {
+        background: #ccc;
+    }
+
+    .col {
+        border: 1px solid red;
+    }
+
+    .col-inner {
+        background: #eee;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /* sm breakpoint */
+    @media only screen and (min-width: 38em) {
+
+
+    }
+
+    /* md breakpoint */
+    @media only screen and (min-width: 58em) {
+
+
+    }
+
+    /* lg breakpoint */
+    @media only screen and (min-width: 75em) {
+
+
+    }
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <div id="demo6" class="container">
+
+            <div class="row jumbotron">
+                <div class="col col-xs-12">
+                    <div class="col-inner">
+                        <h1>Demo 6 - Responsive website example</h1>
+                        <p>
+                            <strong>Current media:</strong> <span id="breakpoint-info"></span>
+                        </p>
+                        <p>
+                            This website skeleton uses <a href="http://flexboxgrid.com/" target="_blank" rel="noopener">Flexbox Grid</a>
+                            as a grid system which simplifies the arrangement of the elements in most cases.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-sm-6 col-md-4">
+                    <div class="col-inner">
+                        <h2>Column 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-4">
+                    <div class="col-inner">
+                        <h2>Column 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                </div>
+                <div class="col col-xs-12 col-md-4">
+                    <div class="col-inner">
+                        <h2>Column 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+        const breakpointInfo = function() {
+
+            let bp = 'mini mobile';
+            if( window.matchMedia("(min-width: 32em)").matches ) bp = 'mobile';
+            if( window.matchMedia("(min-width: 64em)").matches ) bp = 'tablet';
+            if( window.matchMedia("(min-width: 75em)").matches ) bp = 'desktop';
+
+            document.getElementById('breakpoint-info').textContent = bp;
+        };
+
+        breakpointInfo();
+        window.onresize = breakpointInfo;
+        </script>
+
+    </main>
+
+</body>
+</html>
