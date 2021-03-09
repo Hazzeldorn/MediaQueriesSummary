@@ -38,6 +38,7 @@ Ausser im Internet Explorer gibt es zusätzlich die Möglichkeit, Media Queries 
 - [Demo 3 &ndash; Device orientation & query nesting](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-3.html)
 - [Demo 4 &ndash; Multiple conditions (OR)](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-4.html)
 - [Demo 5 &ndash; NOT Keyword & Version 4 Features](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-5.html)
+- [Demo 6 &ndash; Responsive website example](https://hazzeldorn.github.io/MediaQueriesSummary/demo/demo-6.html)
 
 
 ---
