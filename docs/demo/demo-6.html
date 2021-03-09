@@ -162,12 +162,12 @@
         <script>
         const breakpointInfo = function() {
 
-            let bp = 'mini mobile';
-            if( window.matchMedia("(min-width: 32em)").matches ) bp = 'mobile';
-            if( window.matchMedia("(min-width: 64em)").matches ) bp = 'tablet';
-            if( window.matchMedia("(min-width: 75em)").matches ) bp = 'desktop';
+            let media = 'mini mobile';
+            if( window.matchMedia("(min-width: 42em)").matches ) media = 'mobile';
+            if( window.matchMedia("(min-width: 58em)").matches ) media = 'tablet';
+            if( window.matchMedia("(min-width: 75em)").matches ) media = 'desktop';
 
-            document.getElementById('breakpoint-info').textContent = bp;
+            document.getElementById('breakpoint-info').textContent = media;
         };
 
         breakpointInfo();
